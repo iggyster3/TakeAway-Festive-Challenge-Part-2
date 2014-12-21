@@ -11,12 +11,4 @@ describe Food do
     end
   end
 
-  context "after food has been created" do
-
-    let (:food) {Food.new('Custard')}
-
-    it "can add more food" do
-    expect(food.add_food).to eq(1)
-    end
-  end
 end
