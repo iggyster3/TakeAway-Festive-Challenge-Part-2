@@ -2,17 +2,10 @@ require 'menu'
 
 describe Menu do
 
-  context "On initialize of Menu" do
+  let(:menu){Menu.new}
 
-    let(:menu) {Menu.new('Makers Fast OOD')}
-
-    it "can have a name" do
-      expect(menu.name).to eq('Makers Fast OOD')
-    end
-
-    it "can have a display of food on menu" do
-      expect(menu.menu_display).to eq('peanuts')
-    end
+  it 'should receive a food object' do
+    expect{menu.add_menu(menu)}.to change{menu.menu_list.count}.by (1)
   end
 
 end

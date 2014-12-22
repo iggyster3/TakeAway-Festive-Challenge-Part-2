@@ -1,15 +1,12 @@
 class Menu
+  attr_reader :menu_list
 
-  attr_accessor :name
-
-  def initialize(name)
-    @name = name
-    menu_display
+  def initialize
+    @menu_list = []
   end
 
-  def menu_display
-  food = {name: "peanuts", price: 10}
-  food[:name]
+  def add_menu(food)
+    @menu_list << food
   end
 
 end

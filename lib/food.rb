@@ -1,11 +1,10 @@
-class Food
+class FoodDish
 
-  def initialize(name)
-    @name = name
-  end
+  attr_accessor :name, :cost
 
-  def name
-    @name
+  def initialize(list={})
+    @name = list.fetch(:name, "")
+    @cost = list.fetch(:cost, 0)
   end
 
 end
