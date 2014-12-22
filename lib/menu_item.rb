@@ -15,7 +15,7 @@ class MenuItem
   end
 
   def food_item_list
-    @line_line_list
+    @line_item_list
   end
 
   def food_item_count
