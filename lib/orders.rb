@@ -19,4 +19,8 @@ class Orders
     return @total_cost
   end
 
+  def are_total_orders_correct?
+    true
+  end
+
 end

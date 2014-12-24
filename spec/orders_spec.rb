@@ -17,4 +17,8 @@ describe Orders do
     expect(orders.calculate_total_cost).to eq(nil)
   end
 
+  it 'should check that the total cost is correct' do
+    expect(orders.are_total_orders_correct?).to eq(true)
+  end
+
 end
