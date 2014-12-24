@@ -13,7 +13,8 @@ describe Orders do
     expect(orders.total_orders(menu_item).count).to eq(1)
   end
 
-  it 'should be able to calculate total' do
+  it 'should be able to calculate total cost' do
+    expect(orders.calculate_total_cost).to eq(nil)
   end
 
 end
