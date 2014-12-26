@@ -5,7 +5,6 @@ describe MenuItem do
 
     let(:menu_item) {MenuItem.new}
     let(:food){FoodDish.new}
-    #let(:food){double :food, name: "Custard", cost: 69}
 
     it "can receive a food and quantity" do
       food.name=("Custard")
