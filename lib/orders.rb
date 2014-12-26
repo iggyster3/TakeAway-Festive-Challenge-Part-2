@@ -20,6 +20,11 @@ class Orders
   end
 
   def are_total_orders_correct?
+    @total_cost
+    true
+  end
+
+  def send_food(customer)
     true
   end
 
