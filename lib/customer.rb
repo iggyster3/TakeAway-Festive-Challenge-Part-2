@@ -23,7 +23,7 @@ class Customers
   end
 
   def get_delivery_time
-    @time_hour = Time.new.strftime("%H").to_i+1
+    @time_hour = Time.new.strftime("%H").to_i
     @time_minute = Time.new.strftime("%M")
     @time_now = "#{@time_hour}:#{@time_minute}"
   end

@@ -1,5 +1,5 @@
 require_relative 'menu_item'
-require_relative 'customers'
+require_relative 'customer'
 
 class Orders
 
