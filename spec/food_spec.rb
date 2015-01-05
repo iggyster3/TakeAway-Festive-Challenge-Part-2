@@ -2,7 +2,7 @@ require 'food'
 
 describe FoodDish do
 
-    let (:food) {FoodDish.new(name: 'Custard', cost: 69)}
+    let (:food) {FoodDish.new('Custard', 69)}
 
     it "can have a name" do
     expect(food.name).to eq('Custard')

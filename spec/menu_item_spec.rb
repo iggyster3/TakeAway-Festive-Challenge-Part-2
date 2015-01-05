@@ -4,7 +4,7 @@ require 'food'
 describe MenuItem do
 
     let(:menu_item) {MenuItem.new}
-    let(:food){FoodDish.new}
+    let(:food){FoodDish.new('custard', 69)}
 
     it "can receive a food and quantity" do
       food.name=("Custard")

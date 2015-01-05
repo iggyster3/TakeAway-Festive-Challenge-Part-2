@@ -16,23 +16,21 @@ class Orders
   end
 
   def calculate_total_cost
-    @total_menu_item.flatten!
-    @total_order = @total_menu_item[2].to_i + @total_menu_item[5].to_i
-    return @total_cost
+    @customer_total = @total_menu_item.inject(0){|memo,item| item[2] + memo }
   end
 
-  def get_total_from_customer(menu_item)
-  @customer_total = menu_item.receive_total
-  end
+  # def get_total_from_customer(menu_item)
+  # @customer_total = menu_item.receive_total
+  # end
 
   def are_total_orders_correct?
-    @total_cost == @customer_total
+    @customer_total
     true
   end
 
   def send_food(customers)
 
-    raise RangeError.new ("You have not provided an order.") if @total_cost <=0
+    raise RangeError.new ("You have not ordered.") if @customer_total <=0
 
     return customers.confirm_order if are_total_orders_correct?
 

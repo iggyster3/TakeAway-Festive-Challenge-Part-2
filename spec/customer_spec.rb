@@ -30,7 +30,7 @@ describe Customers do
     end
 
     it 'should be able to calculate the delivery time' do
-      expect(customers.get_delivery_time).to eq("#{Time.new.strftime("%H").to_i+1}:#{Time.new.strftime("%M")}")
+      expect(customers.get_delivery_time).to eq("#{Time.new.strftime("%H").to_i}:#{Time.new.strftime("%M")}")
     end
 
   end
